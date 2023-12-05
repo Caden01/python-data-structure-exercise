@@ -25,8 +25,8 @@ def partition(lst, fn):
 
     for val in lst :
         if fn(val) :
-            pass_list.append
+            pass_list.append(val)
         else :
-            fail_list.append
+            fail_list.append(val)
 
     return [pass_list, fail_list]
