@@ -11,3 +11,16 @@ def mode(nums):
         >>> mode([2, 2, 3, 3, 2])
         2
     """
+
+    value_frequency = {num: nums.count(num) for num in nums}
+    
+    highest_frequency = 0
+
+    for (val, freq) in value_frequency.items() :
+        if freq > highest_frequency :
+            highest_frequency = val 
+
+    
+    return highest_frequency 
+
+print(mode([1, 2, 1]))
