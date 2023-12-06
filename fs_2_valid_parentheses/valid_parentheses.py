@@ -30,5 +30,6 @@ def valid_parentheses(parens):
             return True
         temp = val
     return False
+
 print(valid_parentheses("(()())"))
 print(valid_parentheses("((())"))
